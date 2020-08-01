@@ -1,0 +1,126 @@
+.routeStory{
+    width: 100%;
+    height: 7.5%;
+    background: #ffffff;
+}
+.routeStory p a{
+    color: #000000;
+}
+.routeStory p{
+    font-weight: bold;
+    padding: 4.5% 0 4.5% 3.5%;
+}
+.productActions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffffff;
+}
+.shareProduct{
+    margin: 0 0 0 3.5%;
+}
+.zoomProduct{
+    margin: 0 3.5%;
+}
+.amountImages span{
+    width: 5px;
+    height: 2px;
+    background: black;
+    display: inline-block;
+}
+.productImage img{
+    width: 100%;
+    height: 100%;
+}
+.productImage{
+    width: 100%;
+    height: 300px;
+}
+.productInfo{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffffff;
+}
+.productColor{
+    font-size: 20px;
+    background: #ffffff;
+}
+.colors div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px #000000 solid;
+    margin: 2% 2% 2% 0;
+    cursor: pointer;
+}
+.sizes div{
+    min-width: 50px;
+    border: 1px #000000 solid;
+    background: #C4C4C4;
+    margin: 2% 4.5% 2% 0;
+    text-align: center;
+    padding: 2.5% 0 2.5% 0;
+    cursor: pointer;
+}
+.sizes{
+    flex-wrap: wrap;
+}
+.sizesGuide{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 16px;
+}
+.productDescription{
+    color: #868181;
+    font-size: 18px;
+}
+.pdTop1{
+    padding-top: 1%;
+}
+.pdTop2{
+    padding-top: 2%;
+}
+.pdTop3{
+    padding-top: 3%;
+}
+
+.pdBot1{
+    padding-bottom: 1%;
+}
+.pdBot2{
+    padding-bottom: 2%;
+}
+.pdBot3{
+    padding-bottom: 3%;
+}
+.quantity{
+    justify-content: end;
+}
+.quanInput{
+    width: 10%;
+    height: 100%;
+    font-size: 22px;
+    padding-left: 2%;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btnAddtoCart{
+    width: 100%;
+}
+.rounded{
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px white solid;
+}
+.greyBorder{
+    border: 1px #c4c4c4 solid;
+}
+div.rounded:hover{
+    border: 1px #000000 solid;
+}

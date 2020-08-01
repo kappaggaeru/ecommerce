@@ -1,0 +1,247 @@
+body,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav div{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+.topBar{
+    top: 0;
+    width: 100%;
+    height: 7.5%;
+}
+.bgYellow{
+    background-color: #f4df20;
+}
+.navbar{
+    background-color: #f4df20;
+    position: sticky;
+    padding: 0 0 2.5% 0;
+    z-index: 3;
+}
+.burgerItem{
+    order: 1;
+    margin: 3.5% 0 0 3.5%;
+}
+.titleItem{
+    order: 2;
+    margin: 3.5% 0 0 7.5%;
+}
+.searchItem{
+    order: 3;
+    margin: 3.5% 0 0 10%;
+}
+.shopItem{
+    order: 4;
+    margin: 3.5% 3.5% 0 0;
+    cursor: pointer;
+}
+.titleSite{
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* sidebar */
+.sideBar{
+    position: fixed;
+    top: 7.5%;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    z-index: 2;
+}
+.sideBar.closed{
+    left:-100%;
+}
+.sideBar.closing{
+    animation-name: sideBar-closing;
+    animation-duration: 0.3s;
+}
+.sideBar.opening{
+    animation-name: sideBar-opening;
+    animation-duration: 0.3s;
+}
+@keyframes sideBar-opening{
+    from{left: -100%}
+	to{left: 0}
+}
+@keyframes sideBar-closing{
+    from{left: 0}
+	to{left: -100%}
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+    font-size: 22px;
+    padding: 0 0 2% 0;
+    font-weight: bold;
+}
+.list{
+    margin: 17.5% 0 0 0;
+}
+/* border of li */
+.sideBar .list ul div{
+    border-bottom: 1px #ffffff solid;
+    margin: 0 3.5% 5% 3.5%;
+}
+.faq{
+    margin: 25% 0 0 0;
+    text-align: center;
+}
+.faq ul li{
+    margin: 0 0 3.5% 0;
+}
+
+/* searchBar */
+.searchBar{
+    position: fixed;
+    top: 7.5%;
+    width: 100%;
+    height: 7.5%;
+    z-index: 3;
+}
+input{
+    border: none;
+}
+.searchInput{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    padding: 3.5% 0 3.5% 3.5%;
+}
+
+.searchBar.open{
+    animation: searchBar-show 0.3s;
+}
+.searchBar.close{
+    animation: searchBar-hidden 1.3s;
+}
+@keyframes searchBar-show{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes searchBar-hidden{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+/* class hidden */
+.hidden{
+    display: none;
+}
+/* class not hidden */
+.show{
+    display: block;
+}
+
+/* content */
+.container{
+    width: 100%;
+    /* background-color: aqua; */
+    padding-top: 2%;
+}
+.mgLeft{
+    margin-left: 2%;
+}
+.mgRight{
+    margin-right: 2%;
+}
+.pdLeft{
+    padding-left: 3.5%;
+}
+.pdRight{
+    padding-right: 3.5%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.bold{
+    font-weight: bold;
+}
+.grayLine{
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+.spcbtw{
+    justify-content: space-between;
+}
+.font20{
+    font-size: 20px;
+}
+.font16{
+    font-size: 16px;
+}
+.font18{
+    font-size: 18px;
+}
+.bgWhite{
+    background: #ffffff;
+}
+.toggle{
+    cursor: pointer;
+}
+
+/* cart */
+.cart{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 4;
+}
+.cart.closed{
+    right: -100%;
+}
+.cart.closing{
+    animation-name: cart-closing;
+    animation-duration: 0.3s;
+}
+.cart.opening{
+    animation-name: cart-opening;
+    animation-duration: 0.3s;
+}
+@keyframes cart-opening{
+    from{right: -100%}
+	to{right: 0}
+}
+@keyframes cart-closing{
+    from{right: 0}
+	to{right: -100%}
+}
+
+.textCenter{
+    justify-content: center;
+}
+.textAling{
+    text-align: center;
+}
+
+.bgPink{
+    background-color: pink;
+}
+.bgBlue{
+    background-color: lightblue;
+}
+.bgOrange{
+    background-color: orangered;
+}
+.bgGrey{
+    background-color: #C4C4C4;
+}
+
+.border{
+    border: 1px black solid;
+}
