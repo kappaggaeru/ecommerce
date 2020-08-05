@@ -173,7 +173,8 @@ input{
 .greyLine{
     width: 100%;
     height: 1px;
-    background: #C4C4C4;
+    /* background: #C4C4C4; */
+    background: #868181;
 }
 .shadow{
     width: 100%;

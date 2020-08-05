@@ -16,7 +16,7 @@ let closeCart = document.querySelector("#closeCart");
 sideBar.classList.add("closed");//empieza cerrada
 searchBar.classList.add("hidden");
 closeBurger.classList.add("hidden");
-cart.classList.add("closed");
+// cart.classList.add("closed");
 
 //sidebar interaction
 openBurger.addEventListener("click",function(){
@@ -80,3 +80,19 @@ document.querySelector('div[name="footInfo"]').addEventListener("click",function
         imgFootInfo.src = whiteDropUp;
     }
 });
+
+let divs = document.querySelectorAll(".seeProduct");
+for (let i = 0; i < divs.length; i++) {
+    divs[i].addEventListener("click",loadProduct);
+}
+function loadProduct(){
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.querySelector(".container").innerHTML = this.responseText;
+            console.log("working");
+        }
+    };
+    xhttp.open("GET", "product.html", true);
+    xhttp.send();
+}
