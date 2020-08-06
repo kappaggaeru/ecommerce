@@ -1,7 +1,7 @@
 body,p{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 nav div{
     cursor: pointer;
@@ -11,6 +11,7 @@ a{
     color: inherit;
 }
 .topBar{
+    position: sticky;
     top: 0;
     width: 100%;
     height: 7.5%;
@@ -19,7 +20,6 @@ a{
     background-color: #f4df20;
 }
 .navbar{
-    position: sticky;
     padding: 0 0 2.5% 0;
     z-index: 3;
     box-shadow: 0 0 1px rgba(0,0,0,0.2);
@@ -45,7 +45,6 @@ a{
     font-size: 22px;
     text-decoration: none;
     color: #000000;
-    font-weight: bold;
 }
 
 /* sidebar */
@@ -85,7 +84,7 @@ ul{
 li{
     font-size: 22px;
     padding: 0 0 2% 0;
-    font-weight: bold;
+    cursor: pointer;
 }
 .list{
     margin: 10% 0 0 0;
@@ -179,8 +178,8 @@ input{
 .shadow{
     width: 100%;
     height: 1px;
-    /* background: rgba(0,0,0,0.1); */
-    background: #f9f9f9;
+    background: rgba(0,0,0,0.1);
+    /* background: #f9f9f9; */
 }
 .greyShadow{
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.2);

@@ -1,3 +1,5 @@
+console.log("product.js");
+
 let sizesDiv = document.querySelector('div[name="sizesDropdown"]');
 let sizesDrop = document.querySelector('img[name="sizesDrop"]');
 
@@ -18,7 +20,7 @@ document.querySelector('#btnMinusQuan').addEventListener("click",function(){
     }
 });
 document.querySelector('#btnPlusQuan').addEventListener("click",function(){
-    if(quantity < 10){
+    if(quantity < 100){
         quantity++;
         comboQuantity.value = quantity;
     }

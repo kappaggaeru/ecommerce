@@ -104,6 +104,8 @@
     background: none;
     border: none;
     height: 100%;
+    width: 100%;
+    padding: 0 0;
 }
 .quantity{
     width: 50%;
@@ -130,7 +132,6 @@
 .btnContainer{
     width: 25%;
     border: 1px solid #f2f2f2;
-    padding: 0 2% 0 2%;
     text-align: center;
     cursor: pointer;
 }

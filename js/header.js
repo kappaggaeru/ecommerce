@@ -1,10 +1,12 @@
 "use strict";
-console.log("hello world");
+console.log("header.js");
 //elements
 let sideBar = document.querySelector(".sideBar");
 let searchBar = document.querySelector(".searchBar");
 let cart = document.querySelector(".cart");
-let navBar = document.querySelector(".topBar");
+// let navBar = document.querySelector(".topBar");
+let navBar = document.querySelector('nav[name="nav"]');
+
 
 //buttons
 let openBurger = document.querySelector("#openBurger");
@@ -81,18 +83,19 @@ document.querySelector('div[name="footInfo"]').addEventListener("click",function
     }
 });
 
-/* let divs = document.querySelectorAll(".seeProduct");
-for (let i = 0; i < divs.length; i++) {
-    divs[i].addEventListener("click",loadProduct);
-}
-function loadProduct(){
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.querySelector(".container").innerHTML = this.responseText;
-            console.log("working");
-        }
-    };
-    xhttp.open("GET", "product.html", true);
-    xhttp.send();
-} */
+let s = document.createElement("script");
+s.type = "text/javascript";
+let head = document.querySelector("#head");
+let container = document.querySelector(".container");
+let xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    container.innerHTML = this.responseText;
+    s.src = "js/home.js";
+    head.appendChild(s);
+    console.log("home with ajax");
+  }
+};
+xhttp.open("GET", "home.html", true);
+xhttp.send();
