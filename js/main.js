@@ -81,7 +81,7 @@ document.querySelector('div[name="footInfo"]').addEventListener("click",function
     }
 });
 
-let divs = document.querySelectorAll(".seeProduct");
+/* let divs = document.querySelectorAll(".seeProduct");
 for (let i = 0; i < divs.length; i++) {
     divs[i].addEventListener("click",loadProduct);
 }
@@ -95,4 +95,4 @@ function loadProduct(){
     };
     xhttp.open("GET", "product.html", true);
     xhttp.send();
-}
+} */
