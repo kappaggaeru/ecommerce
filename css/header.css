@@ -256,17 +256,8 @@ input{
 .border{
     border: 1px black solid;
 }
-
-.btnInput{
-    background: none;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border: 1px solid #f2f2f2;
-    height: 100%;
-    display: inline-block;
-    padding: 1% 3% 1% 3%;
+.inLineBlock{
+    display: inline-flexbox;
 }
 .bgBlack{
     background: #353737;

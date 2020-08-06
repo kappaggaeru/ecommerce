@@ -40,7 +40,7 @@
 			<div class="size">XL</div>
 			<div class="size">XXL</div>
 		</div>
-		<div class="sizesGuide toggle">Guía de talles</div>
+		<div class="sizesGuide toggle">Sizes Guide</div>
 	</div>    
 </div>
 <div class="pdLeft pdRight">
@@ -48,7 +48,7 @@
 </div>
 <div class="bgWhite pdTop3 pdBot3">
 	<div class="flex spcbtw toggle" name="toggleDesc">
-		<div class="pdLeft font20 bold">Descripción:</div>
+		<div class="pdLeft font20 bold">Description:</div>
 		<img src="icons/dropDown.png" class="pdRight" name="descDrop">
 	</div>
 	<div class="productDescription hidden" name="descriptionDrowdown">
@@ -59,11 +59,17 @@
 	<div class="shadow"></div>
 </div>
 <div class="pdTop3 pdBot3 bgWhite">
-	<div class="flex spcbtw">
-		<div class="pdLeft font20 bold">Cantidad:</div>
-		<div class="quantity flex pdRight">
+	<div class="pdTop2 pdBot1 pdLeft">
+		<div class="font20 bold">Quantity:</div>
+	</div>
+	<div class="quantityPdt flex pdRight pdLeft">
+		<div class=" btnContainer">
 			<button class="btnInput" id="btnMinusQuan">-</button>
-			<input type="number" id="quanInput" class="quanInput" value="1" min="1">
+		</div>
+		<div class="inputContainer ">
+			<input type="number" class="quanInput" value="1" min="1" id="quanInput">
+		</div>
+		<div class=" btnContainer">
 			<button class="btnInput" id="btnPlusQuan">+</button>
 		</div>
 	</div>
@@ -74,14 +80,12 @@
 <div class="bgWhite">
 	<div class="pdLeft pdRight pdTop3 pdBot3">
 		<div class="btnAddtoCart rounded bgBlack colorWhite">
-			<p class="textAling pdTop3 pdBot3 pdLeft font20 bold">Agregar al carrito</p>
+			<p class="textAling pdTop3 pdBot3 pdLeft font20 bold">Add to cart</p>
 		</div>    
 	</div>
 	<div class="pdLeft pdRight pdBot3">
 		<div class="btnAddtoCart rounded bgYellow">
-			<p class="textAling pdTop3 pdBot3 pdLeft font20 bold">Comprar ahora</p>
+			<p class="textAling pdTop3 pdBot3 pdLeft font20 bold">Buy now</p>
 		</div>    
 	</div>
 </div>
-
-<script src="js/product.js"></script>

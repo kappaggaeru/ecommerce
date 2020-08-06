@@ -16,7 +16,7 @@ let closeCart = document.querySelector("#closeCart");
 sideBar.classList.add("closed");//empieza cerrada
 searchBar.classList.add("hidden");
 closeBurger.classList.add("hidden");
-// cart.classList.add("closed");
+cart.classList.add("closed");
 
 //sidebar interaction
 openBurger.addEventListener("click",function(){
