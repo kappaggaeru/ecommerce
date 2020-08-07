@@ -1,4 +1,4 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -10,9 +10,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -24,3 +24,28 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+// imagesModal
+let imagesModal = document.querySelector("#imagesModal");
+let images = document.querySelectorAll(".imgModal");
+let imgModal = document.querySelector(".modal-content");
+let caption = document.querySelector("#caption");
+for (let i = 0; i < images.length; i++) {
+	images[i].addEventListener("click",()=>{
+		imagesModal.classList.toggle("hidden");
+		imgModal.src = images[i].src;
+		caption.innerHTML = images[i].alt;
+	});
+}
+document.querySelector("#closeImgModal").addEventListener("click",()=>{
+	imagesModal.classList.toggle("hidden");
+});
+
+// sizesModal
+let sizesModal = document.querySelector("#sizesModal");
+document.querySelector(".sizesGuide").addEventListener("click",()=>{
+	sizesModal.classList.toggle("hidden");
+});
+document.querySelector("#closeSizesModal").addEventListener("click",()=>{
+	sizesModal.classList.toggle("hidden");
+});

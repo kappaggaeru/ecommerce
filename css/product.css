@@ -34,7 +34,7 @@
 }
 .productImage{
     width: 100%;
-    /* height: 400px; */
+    padding: 0 3.5%;
 }
 .productInfo{
     font-size: 24px;
@@ -59,11 +59,13 @@
 .size{
     min-width: 50px;
     border: 1px #c4c4c4 solid;
-    /* background: #C4C4C4; */
     margin: 2% 4.5% 2% 0;
     text-align: center;
     padding: 2.5% 0 2.5% 0;
     cursor: pointer;
+}
+.size:hover{
+    background: #C4C4C4;
 }
 .size.active{
     border: 1px #000000 solid;
@@ -106,6 +108,9 @@
     height: 100%;
     width: 100%;
     padding: 0 0;
+}
+.btnInput:active{
+    background: #f2f2f2;
 }
 .quantity{
     width: 50%;
@@ -158,3 +163,4 @@ div.rounded:hover{
 .letterSpace{
     letter-spacing: 1px;
 }
+

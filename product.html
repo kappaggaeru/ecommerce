@@ -1,21 +1,69 @@
-
+<!-- modal for zoomed images-->
+<div id="imagesModal" class="modal hidden">
+	<span class="closeModal pdRight" id="closeImgModal">&times;</span>
+	<img class="modal-content">
+	<div id="caption"></div>
+</div>
+<!-- modal for sizes guide-->
+<div id="sizesModal" class="modal hidden">
+	<span class="closeModal pdRight" id="closeSizesModal">&times;</span>
+	<table>
+		<tr>
+			<th></th>
+			<th>XS</th>
+			<th>S</th>
+			<th>M</th>
+			<th>L</th>
+			<th>XL</th>
+			<th>XXL</th>
+		</tr>
+		<tr>
+			<td>Width</td>
+			<td>48</td>
+			<td>50</td>
+			<td>52</td>
+			<td>54</td>
+			<td>56</td>
+			<td>60</td>
+		</tr>
+		<tr>
+			<td>Length</td>
+			<td>58</td>
+			<td>60</td>
+			<td>64</td>
+			<td>72</td>
+			<td>74</td>
+			<td>76</td>
+		</tr>
+		<tr>
+			<td>Sleeve</td>
+			<td>56</td>
+			<td>58</td>
+			<td>60</td>
+			<td>62</td>
+			<td>68</td>
+			<td>70</td>
+		</tr>
+	</table>
+	<img class="modal-content" src="https://d26lpennugtm8s.cloudfront.net/stores/026/096/rte/Tabla%20medidas%20sweater%202020.jpg" alt="" srcset="">
+</div>
 <div class="productImage">
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <div class="numbertext">1 / 3</div>
-		  <img src="images/nelson1.jpg" alt="nelson1.jpg">
+		  <img src="images/nelson1.jpg" alt="nelson1.jpg" class="imgModal">
 		  <!-- <div class="text">Caption Text</div> -->
 		</div>
 		
 		<div class="mySlides fade">
 		  <div class="numbertext">2 / 3</div>
-		  <img src="images/nelson3.jpg" alt="nelson3.jpg">
+		  <img src="images/nelson3.jpg" alt="nelson3.jpg" class="imgModal">
 		  <!-- <div class="text">Caption Two</div> -->
 		</div>
 		
 		<div class="mySlides fade">
 		  <div class="numbertext">3 / 3</div>
-		  <img src="images/batman.jpg" alt="batman.jpg">
+		  <img src="images/batman.jpg" alt="batman.jpg" class="imgModal">
 		  <!-- <div class="text">Caption Three</div> -->
 		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
