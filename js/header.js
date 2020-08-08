@@ -57,31 +57,6 @@ closeCart.addEventListener("click",function(){
     cart.classList.toggle("closed");
 });
 
-let footAbout = document.querySelector('div[name="footAboutDrop"]');
-let footInfo = document.querySelector('div[name="footInfoDrop"]');
-
-let imgFootAbout = document.querySelector('img[name="footImgAbout"]');
-let imgFootInfo = document.querySelector('img[name="footImgInfo"]');
-
-let whiteDropDown = "icons/dropDownWhite.png";
-let whiteDropUp = "icons/dropUpWhite.png";
-
-document.querySelector('div[name="footAbout"]').addEventListener("click",function(){
-    footAbout.classList.toggle("hidden");
-    if(footAbout.classList.contains("hidden")){
-        imgFootAbout.src = whiteDropDown;
-    }else{
-        imgFootAbout.src = whiteDropUp;
-    }
-});
-document.querySelector('div[name="footInfo"]').addEventListener("click",function(){
-    footInfo.classList.toggle("hidden");
-    if(footInfo.classList.contains("hidden")){
-        imgFootInfo.src = whiteDropDown;
-    }else{
-        imgFootInfo.src = whiteDropUp;
-    }
-});
 
 let s = document.createElement("script");
 s.type = "text/javascript";
@@ -99,3 +74,23 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "home.html", true);
 xhttp.send();
+
+// footer
+
+let titlesFooter = document.querySelectorAll(".titleFooter");
+let contentFooter = document.querySelectorAll(".contentFooter");
+let dropsFooter = document.querySelectorAll(".imgDrop");
+
+for (let i = 0; i < titlesFooter.length; i++) {
+    titlesFooter[i].addEventListener("click",()=>{
+        contentFooter[i].classList.toggle("hidden");
+        if(contentFooter[i].classList.contains("hidden")){
+            dropsFooter[i].src = "icons/dropDownWhite.png";
+        }else{
+            dropsFooter[i].src = "icons/dropUpWhite.png";
+        }
+    });
+}
+for (let i = 0; i < titlesFooter.length; i++) {
+    contentFooter[i].classList.toggle("hidden");
+}

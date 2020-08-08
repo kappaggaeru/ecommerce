@@ -3,3 +3,24 @@
     width: 100%;
     color: #ffffff;
 }
+.infoContact{
+    height: 100%;
+    margin: 0.75% 0 0 7.5%;
+}
+.infoItem{
+    padding: 3.5% 3.5% 3.5% 3.5%;
+    display: flex;
+    flex-direction: row;
+}
+.devInfo{
+    background: #c4c4c4;
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.center img{
+    margin: 5% 10% 0 5%;
+}

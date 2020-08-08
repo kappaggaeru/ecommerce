@@ -1,4 +1,4 @@
-console.log("home.js");
+console.log("homeeeeeeeee.js");
 
 let boxes = document.querySelectorAll(".box");
 for (let i = 0; i < boxes.length; i++) {
@@ -23,3 +23,25 @@ function seeProduct(){
     xhttp.send();
 }
 // .addEventListener("click",()=>{};
+
+let promos = document.querySelectorAll(".promoCarousel");
+let indicators = document.querySelectorAll(".promoIndicator");
+let promoActive = 0;
+hideAllPromos()
+changeCarousel();
+function hideAllPromos(){
+    for (let i = 0; i < promos.length; i++) {
+        promos[i].classList.add("hidden");
+        indicators[i].classList.remove("active");
+    }
+}
+function changeCarousel(){
+    hideAllPromos();
+    promos[promoActive].classList.remove("hidden");
+    indicators[promoActive].classList.toggle("active");
+    promoActive++;
+    if(promoActive == promos.length){
+        promoActive = 0;
+    }
+    setTimeout(changeCarousel,8000);
+}

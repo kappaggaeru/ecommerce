@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/scroll.css">
 	<link rel="icon" href="icons/logoMS.svg" type="image/svg">
 </head>
 <body>
 	<header class="topBar navbar bgPink">
-		<nav class=" flex spcbtw pdBot2 bgWhite" name="nav">
+		<nav class=" flex spcbtw pdBot2 bgOrange" name="nav">
 			<div class="burgerItem">
 				<img src="icons/burgerIcon.png" id="openBurger">
 				<img src="icons/x.png" id="closeBurger">
@@ -29,7 +30,7 @@
 				<img src="icons/shoppingCart.png" id="openCart">
 			</div>
 		</nav>
-		<div class="searchBar bgWhite">
+		<div class="searchBar bgYellow">
 			<div class="flex spcbtw">
 				<div class="burgerItem">
 					<img src="icons/search.png">
@@ -60,7 +61,7 @@
 			</div>
 		</div>
 		<div class="cart">
-			<div class="topBar flex spcbtw greyShadow">
+			<div class="flex spcbtw greyShadow pdBot2">
 				<span class="titleSite burgerItem">Cart</span>
 				<div class="shopItem">
 					<img src="icons/x.png" id="closeCart">
@@ -152,13 +153,36 @@
 		
 	</div>
 	<footer>
-        <div class="footer">
+        <div class="footer pdBot3 pdTop3 pdBot3">
+			<div class="pdTop3 pdBot3">
+				<div class="flex spcbtw toggle titleFooter">
+					<div class="pdLeft font20">Contact us</div>
+                    <img src="icons/dropDownWhite.png" class="pdRight imgDrop">
+				</div>
+				<div class="contentFooter">
+					<div class="infoItem">
+						<img src="icons/phone.png" alt="" srcset="">
+						<p class="infoContact">0800-123-456</p>
+					</div>
+					<div class="infoItem">
+						<img src="icons/map-pin.png" alt="" srcset="">
+						<p class="infoContact">Baker street 1990</p>
+					</div>
+					<div class="infoItem">
+						<img src="icons/mail.png" alt="" srcset="">
+						<p class="infoContact"></p>example@example.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="pdLeft pdRight">
+                <div class="greyLine"></div>
+            </div>
             <div class="pdTop3 pdBot3">
-                <div class="flex spcbtw toggle" name="footAbout">
+                <div class="flex spcbtw toggle titleFooter">
                     <div class="pdLeft font20">About</div>
-                    <img src="icons/dropDownWhite.png" class="pdRight" name="footImgAbout">
+                    <img src="icons/dropDownWhite.png" class="pdRight imgDrop">
                 </div>
-                <div class="productDescription hidden" name="footAboutDrop">
+                <div class="contentFooter">
                     <p class="pdLeft pdRight font16">Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla, porttitor pharetra parturient facilisis posuere sem. Dapibus litora vel pretium mollis cursus varius eleifend nullam est, eu ridiculus morbi sodales primis duis vivamus enim nascetur, vulputate suscipit mauris gravida blandit leo</p>
                 </div>
             </div>
@@ -166,18 +190,33 @@
                 <div class="greyLine"></div>
             </div>
             <div class="pdTop3 pdBot3">
-                <div class="flex spcbtw toggle" name="footInfo">
+                <div class="flex spcbtw toggle titleFooter">
                     <div class="pdLeft font20">Information</div>
-                    <img src="icons/dropDownWhite.png" class="pdRight" name="footImgInfo">
+                    <img src="icons/dropDownWhite.png" class="pdRight imgDrop">
                 </div>
-                <div class="productDescription hidden" name="footInfoDrop">
+                <div class="contentFooter">
                     <p class="pdLeft pdRight font16">Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla, porttitor pharetra parturient facilisis posuere sem. Dapibus litora vel pretium mollis cursus varius eleifend nullam est, eu ridiculus morbi sodales primis duis vivamus enim nascetur, vulputate suscipit mauris gravida blandit leo</p>
                 </div>
             </div>
-            <div class="pdLeft pdRight pdBot3">
+            <div class="pdLeft pdRight">
                 <div class="greyLine"></div>
             </div>
-        </div>
+		</div>
+		<div class="devInfo pdTop3 pdBot3">
+			<div class="center">Kappaggaeru</div>
+			<div class="center">
+				<div>
+					<a href="https://github.com/kappaggaeru">
+						<img src="icons/github.png" alt="" srcset="">
+					</a>
+				</div>
+				<a href="https://www.instagram.com/kappaggaeru/">
+					<div>
+						<img src="icons/instagram.png" alt="" srcset="">
+					</div>
+				</a>
+			</div>
+		</div>
 	</footer>
 	<script src="js/header.js"></script>
 </body>

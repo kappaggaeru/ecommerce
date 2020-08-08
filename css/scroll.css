@@ -1,0 +1,35 @@
+.scroll{
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+.itemScroll{
+    height: 100%;
+    width: 30%;
+    margin: 2% 2% 5% 0;
+    display: inline-block;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+.itemScroll img{
+    width: 100%;
+}
+.mgBot5{
+    margin-bottom: 5%;
+}
+.infoScroll{
+    padding: 0 0 0 3%;
+    width: 100%;
+}
+.smallColors{
+    width: 100%;
+    padding: 0 0 0 3%;
+    overflow: hidden;
+}
+.colorScroll{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 5% 0 0;
+    /* display: inline-block; */
+}
