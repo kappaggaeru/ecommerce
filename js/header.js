@@ -1,11 +1,13 @@
 "use strict";
-console.log("header.js");
+// console.log("header.js");
 //elements
 let sideBar = document.querySelector(".sideBar");
 let searchBar = document.querySelector(".searchBar");
 let cart = document.querySelector(".cart");
-// let navBar = document.querySelector(".topBar");
-let navBar = document.querySelector('nav[name="nav"]');
+// let navbar = document.querySelector(".topBar");
+let navbar = document.querySelector(".navControl");
+let container = document.querySelector(".container");
+let shadowOverAll = document.querySelector(".shadowOverAll");
 
 
 //buttons
@@ -16,7 +18,7 @@ let closeCart = document.querySelector("#closeCart");
 
 //acctions on ready
 sideBar.classList.add("closed");//empieza cerrada
-searchBar.classList.add("hidden");
+// searchBar.classList.add("hidden");
 closeBurger.classList.add("hidden");
 cart.classList.add("closed");
 
@@ -27,6 +29,9 @@ openBurger.addEventListener("click",function(){
     if(sideBar.classList.contains("closing"))sideBar.classList.toggle("closing");
     sideBar.classList.toggle("opening");
     sideBar.classList.toggle("closed");
+    shadowOverAll.classList.toggle("hidden");
+    // container.classList.toggle("stopScroll");
+    // container.classList.toggle("hidden");
 });
 closeBurger.addEventListener("click",function(){
     closeBurger.classList.toggle("hidden");
@@ -34,34 +39,43 @@ closeBurger.addEventListener("click",function(){
     sideBar.classList.toggle("opening");
     sideBar.classList.toggle("closing");
     sideBar.classList.toggle("closed");
+    shadowOverAll.classList.toggle("hidden");
+    // container.classList.toggle("stopScroll");
+    // container.classList.toggle("hidden");
 });
 
 // searchbar interaction
-document.querySelector("#search").addEventListener("click",function(){
-    searchBar.classList.remove("hidden");
-    navBar.classList.add("hidden");
-});
-document.querySelector("#closeSearch").addEventListener("click",function(){
-    searchBar.classList.add("hidden");
-    navBar.classList.remove("hidden");
-});
+// document.querySelector("#search").addEventListener("click",function(){
+//     searchBar.classList.remove("hidden");
+//     navbar.classList.add("hidden");
+// });
+// document.querySelector("#closeSearch").addEventListener("click",function(){
+//     searchBar.classList.add("hidden");
+//     navbar.classList.remove("hidden");
+// });
 
 openCart.addEventListener("click",function(){
     if(cart.classList.contains("closing"))cart.classList.toggle("closing");
     cart.classList.toggle("opening");
     cart.classList.toggle("closed");
+    // container.classList.toggle("stopScroll");
+    container.classList.toggle("hidden");
+    // updateCartTitle();
+    // checkCart();
 });
 closeCart.addEventListener("click",function(){
     cart.classList.toggle("opening");
     cart.classList.toggle("closing");
     cart.classList.toggle("closed");
+    container.classList.toggle("hidden");
+    // container.classList.toggle("stopScroll");
 });
 
 
 let s = document.createElement("script");
 s.type = "text/javascript";
 let head = document.querySelector("#head");
-let container = document.querySelector(".container");
+
 let xhttp = new XMLHttpRequest();
 
 xhttp.onreadystatechange = function() {
@@ -69,7 +83,7 @@ xhttp.onreadystatechange = function() {
     container.innerHTML = this.responseText;
     s.src = "js/home.js";
     head.appendChild(s);
-    console.log("home with ajax");
+    // console.log("home with ajax");
   }
 };
 xhttp.open("GET", "home.html", true);

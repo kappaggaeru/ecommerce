@@ -44,3 +44,12 @@
     font-size: 16px;
     padding: 0 0 0 2%;
 }
+.cartItems{
+    height: 73.5%;
+    overflow: auto;
+}
+.cartButtons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

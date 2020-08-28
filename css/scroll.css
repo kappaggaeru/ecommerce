@@ -2,6 +2,7 @@
     width: 100%;
     overflow: auto;
     white-space: nowrap;
+    scrollbar-width: none;
 }
 .itemScroll{
     height: 100%;

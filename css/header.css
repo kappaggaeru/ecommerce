@@ -17,34 +17,29 @@ a,button{
     color: inherit;
 }
 .topBar{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     width: 100%;
-    height: 7.5%;
+    /* height: 7.5%; */
 }
 .bgYellow{
     background-color: #f4df20;
 }
 .navbar{
-    /* padding: 0 0 2.5% 0; */
     z-index: 3;
     box-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
 .burgerItem{
     order: 1;
-    margin: 3.5% 0 0 3.5%;
+    margin: 3.5% 0 3.5% 3.5%;
 }
 .titleItem{
     order: 2;
-    margin: 3.5% 0 0 0%;
-}
-.searchItem{
-    order: 3;
-    margin: 3.5% 0 0 10%;
+    margin: 3.5% 0 3.5% 0%;
 }
 .shopItem{
     order: 4;
-    margin: 3.5% 3.5% 0 0;
+    margin: 3.5% 3.5% 3.5% 0;
     cursor: pointer;
 }
 .titleSite{
@@ -56,11 +51,11 @@ a,button{
 /* sidebar */
 .sideBar{
     position: fixed;
-    top: 7.5%;
+    top: 0;
     bottom: 0;
-    width: 100%;
-    color: #ffffff;
-    background-color: #000000;
+    width: 80%;
+    color: #000000;
+    background-color: #ffffff;
     z-index: 2;
 }
 .sideBar.closed{
@@ -84,47 +79,37 @@ a,button{
 }
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 li{
-    font-size: 22px;
-    padding: 0 0 2% 0;
+    font-size: 18px;
+    padding: 0 0 5% 0;
     cursor: pointer;
 }
 .list{
     margin: 10% 0 0 0;
 }
-/* border of li */
-.sideBar .list ul div{
-    border-bottom: 1px #ffffff solid;
-    margin: 0 3.5% 5% 3.5%;
-}
 .faq{
-    margin: 25% 0 0 0;
     text-align: center;
+    padding: 5% 0 0 0;
 }
-.faq ul li{
-    margin: 0 0 3.5% 0;
+.closeBurger{
+    margin: 3.5% 3.5% 3.5% 0;
 }
 
 /* searchBar */
 .searchBar{
-    top: 0;
     width: 100%;
     height: 7.5%;
-    position: fixed;
-    z-index: 3;
-    box-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
 input{
     border: none;
 }
 .searchInput{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
     font-size: 22px;
     padding: 0 0 0 5%;
+    background: none;
 }
 
 .searchBar.open{
@@ -244,6 +229,9 @@ input{
 .textAling{
     text-align: center;
 }
+.textEnd{
+    justify-content: end;
+}
 
 .bgPink{
     background-color: pink;
@@ -255,7 +243,7 @@ input{
     background-color: orangered;
 }
 .bgGrey{
-    background-color: #C4C4C4;
+    background-color: #eeeeee;
 }
 
 .border{
@@ -269,4 +257,40 @@ input{
 }
 .colorWhite{
     color: #ffffff;
+}
+.stopScroll{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.loupe{
+    margin: 3.5% 5% 0 0;
+}
+.xSearch{
+    margin: 3.5% 0 0 5%;
+}
+.inputSearch{
+    margin: 3.5% 0 0 0;
+}
+.banner{
+    width: 100%;
+    background: #000000;
+}
+.banner div{
+    padding: 1.5% 5% 1.5% 5%;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.shadowOverAll{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
 }

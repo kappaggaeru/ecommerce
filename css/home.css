@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 0;
+    z-index: -1;
     cursor: pointer;
 }
 .btnAd{
@@ -36,9 +36,26 @@
 }
 .promotions{
     width: 100%;
-    height: 200px;
+    height: 500px;
 }
 .dots{
     text-align: center;
     margin-top: 2%;
+}
+.promoted{
+    width: 100%;
+    height: 70%;
+}
+.blacklayer{
+    z-index: 0;
+    position: absolute;
+    background: #000000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.innershadow {
+    -moz-box-shadow:    inset 0 0 50px #000000;
+    -webkit-box-shadow: inset 0 0 50px #000000;
+    box-shadow:         inset 0 0 50px #000000;
 }

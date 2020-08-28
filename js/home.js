@@ -1,4 +1,4 @@
-console.log("homeeeeeeeee.js");
+// console.log("homeeeeeeeee.js");
 
 let boxes = document.querySelectorAll(".box");
 for (let i = 0; i < boxes.length; i++) {
@@ -16,7 +16,7 @@ function seeProduct(){
             produ.src = "js/product.js";
             head.appendChild(slider);
             head.appendChild(produ);
-            console.log("product with ajax");
+            // console.log("product with ajax");
         }
     };
     xhttp.open("GET", "product.html", true);
@@ -27,8 +27,8 @@ function seeProduct(){
 let promos = document.querySelectorAll(".promoCarousel");
 let indicators = document.querySelectorAll(".promoIndicator");
 let promoActive = 0;
-hideAllPromos()
-changeCarousel();
+// hideAllPromos();
+// changeCarousel();
 function hideAllPromos(){
     for (let i = 0; i < promos.length; i++) {
         promos[i].classList.add("hidden");
@@ -43,5 +43,5 @@ function changeCarousel(){
     if(promoActive == promos.length){
         promoActive = 0;
     }
-    setTimeout(changeCarousel,8000);
+    setTimeout(changeCarousel,25000);
 }

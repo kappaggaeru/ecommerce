@@ -1,4 +1,4 @@
-console.log("product.js");
+// console.log("product.js");
 
 let sizesDiv = document.querySelector('div[name="sizesDropdown"]');
 let sizesDrop = document.querySelector('img[name="sizesDrop"]');
@@ -9,9 +9,16 @@ let descDrop = document.querySelector('img[name="descDrop"]');
 let dropUp = "icons/dropUp.png";
 let dropDown = "icons/dropDown.png";
 
-let comboQuantity = document.querySelector('#quanInput');
+let comboQuantity = document.querySelector('#quantity');
 let quantity = 0;
 quantity = comboQuantity.value;
+
+let image = "images/nelson1.jpg";
+let productName = "";
+let price = "";
+let color = "";
+let size = "";
+let units = 0;
 
 document.querySelector('#btnMinusQuan').addEventListener("click",function(){
     if(quantity > 1){
@@ -61,15 +68,17 @@ function unactiveAllSizes(){
 let sizeLabel = document.querySelector('div[name="sizeDiv"]');
 function updateSizeLabel(n){
     let res = "Size: ";
+    let s = "";
     switch(n) {
-        case 0: res += "XS"; break;
-        case 1: res += "S"; break;
-        case 2: res += "M"; break;
-        case 3: res += "L"; break;
-        case 4: res += "XL"; break;
-        case 5: res += "XXL"; break;
+        case 0: s = "XS"; break;
+        case 1: s = "S"; break;
+        case 2: s = "M"; break;
+        case 3: s = "L"; break;
+        case 4: s = "XL"; break;
+        case 5: s = "XXL"; break;
     }
-    sizeLabel.innerHTML = res; 
+    size = s;
+    sizeLabel.innerHTML = res + s; 
 }
 
 let colors = document.querySelectorAll('.color');
@@ -89,13 +98,26 @@ function unactiveAllColors(){
 let colorLabel = document.querySelector('div[name="colorDiv"]');
 function updateColorLabel(n){
     let res = "Color: ";
+    let c = "";
     switch(n) {
-        case 0: res += "Orange"; break;
-        case 1: res += "Lightblue"; break;
-        case 2: res += "Green"; break;
-        case 3: res += "Red"; break;
-        case 4: res += "Purple"; break;
-        case 5: res += "Dark"; break;
+        case 0: c = "Orange"; break;
+        case 1: c = "Lightblue"; break;
+        case 2: c = "Green"; break;
+        case 3: c = "Red"; break;
+        case 4: c = "Purple"; break;
+        case 5: c = "Dark"; break;
     }
-    colorLabel.innerHTML = res; 
+    color = c;
+    colorLabel.innerHTML = res + c; 
 }
+// document.querySelector(".addToCart").addEventListener("click",()=>{
+//     units = comboQuantity.value;
+//     console.log("Units selected: "+units);
+//     productName = document.querySelector(".productName").getAttribute("myData");
+//     price = document.querySelector(".productPrice").getAttribute("myData");
+//     let string = [productName,price,size,color,units,image];
+//     let i = getTotalOfCookies();
+//     setCookie(getTotalOfCookies(),string,1);
+//     updateCart(i);
+// });
+
