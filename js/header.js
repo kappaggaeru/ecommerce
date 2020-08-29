@@ -83,7 +83,7 @@ xhttp.onreadystatechange = function() {
     container.innerHTML = this.responseText;
     s.src = "js/home.js";
     head.appendChild(s);
-    // console.log("home with ajax");
+    console.log("home with ajax");
   }
 };
 xhttp.open("GET", "home.html", true);
